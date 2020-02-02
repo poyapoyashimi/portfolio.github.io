@@ -1,0 +1,1074 @@
+@charset "utf-8";
+
+html, body, h1, h2, h3, h4, ul, li, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header, footer, nav, section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Kosugi Maru', sans-serif, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: #5c5c5c;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  color: #fff8dc;
+  text-decoration: none;
+}
+
+.haederWrap,
+.footerWrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contentsWrap {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
+  padding: 16px 0;
+  text-align: left;
+}
+
+h2 {
+  display: inline-block;
+  color: #a87d70;
+  font-size: 1.7em;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: #a87d70;
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+
+#about h2,
+#cafemenu h2,
+#staff h2 {
+  border-bottom: 2px solid #a87d70;
+  padding-bottom: 10px;
+}
+
+.figure {
+  letter-spacing: 2px;
+}
+
+.more {
+  text-align: right;
+  padding-right: 32px;
+  padding-top: 40px;
+}
+
+.more span {
+  text-align: center;
+}
+
+.more a {
+  display: inline-block;
+  width: 160px;
+  font-family: 'Courgette', cursive;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #7dbcc9;
+  border: 2px solid #7dbcc9;
+  border-radius: 25px;
+  line-height: 1.5;
+}
+
+.more a:hover {
+  color: #7dbcc9;
+  background-color: #fff;
+  border: 2px solid #7dbcc9;
+}
+
+/* header */
+header {
+  background-color: #7dbcc9;
+  border-bottom: 3px solid #6b9ea9;
+}
+
+.drawer-hamburger,
+.drawer-nav {
+  display: none;
+}
+
+.logoArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1060px;
+  padding: 0;
+}
+
+.logo {
+  width: 310px;
+  padding: 10px 0;
+}
+
+.headerTel {
+  background-color: #fff8dc;
+  color: #a87d70;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 0 0 18px 18px;
+  padding: 14px;
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#pageTop img {
+  width: 100px;
+  filter: drop-shadow(1px 1px 1px #b04f31);
+}
+
+#pageTop a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.globalNav {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.globalNav li {
+  width: 140px;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.globalNav a:hover {
+  color: #a87d70;
+}
+
+.accordion {
+  position: relative;
+}
+
+.accordionMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: #7dbcc9;
+  font-size: initial;
+  display: none;
+}
+
+.accordionMenu li {
+  border-bottom: 2px solid #6b9ea9;
+}
+
+.accordionMenu li+li {
+  border: none;
+}
+
+/* mainVisual */
+#mainVisual {
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40%;
+}
+
+.onSwiper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.leaf {
+  width: 50%;
+  height: 110%;
+}
+
+.catch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.catch p {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  right: 0;
+  font-size: 3.5vw;
+  color: #fff;
+  text-shadow: 3px 3px 8px #b04f31;
+}
+
+/* nyan-cafeとは  */
+#about {
+  margin-top: 60px;
+  background-color: #fff;
+}
+
+#about .contentsWrap {
+  padding-bottom: 30px;
+}
+
+#about .contents {
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#about .text {
+  width: 800px;
+  margin: 20px auto;
+  padding-left: 80px;
+  text-align: center;
+}
+
+#about .pad {
+  width: 130px;
+}
+
+#about .pad img {
+  display: block;
+  width: 100px;
+  padding: 12px 0;
+  transition: .3s;
+}
+
+#about .pad img:hover {
+	transform: scale(1.05);
+}
+
+#about .shopName {
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+#about .asTo {
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+#about .text p {
+  line-height: 2;
+  padding-bottom: 16px;
+}
+
+#about .padTop {
+  margin-left: 24px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+}
+
+#about .padBottom {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+/* 料金表 */
+#price .contents {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.priceHead h2 {
+  margin: 12px auto;
+  padding: 0;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.priceWrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.price {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #7dbcc9;
+}
+
+.price th,
+.price td {
+  width: 50%;
+  vertical-align: middle;
+  font-size: 1.4em;
+}
+
+.price th {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background: #7dbcc9;
+}
+
+.price td {
+  height: 40px;
+  color: #7dbcc9;
+  border-right: 1px solid #7dbcc9;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+
+.price .minute1 {
+  border-top: 2px solid #fff;
+}
+
+.price .first th {
+  border-radius: 10px 10px 0 0;
+  border-top: 2px solid #7dbcc9;
+  border-bottom: none;
+}
+
+.price .last th {
+  border-radius: 0 0 0 10px;
+  border-bottom: 1px solid #7dbcc9;
+}
+
+.price .last td {
+  border-radius: 0 0 10px 0;
+  border-bottom: 1px solid #7dbcc9;
+}
+
+/* cafemenu */
+#cafemenu {
+  background-color: #fff8dc;
+}
+
+#cafemenu .contentsWrap {
+  margin: 0 auto;
+  background-image: url(images/contents_leaf.png);
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 63% auto;
+}
+
+#cafemenu h2 {
+  margin: 40px auto;
+}
+
+#cafemenu .contents {
+  align-items: flex-start;
+  padding: 0;
+}
+
+#cafemenu .foodImages {
+  width: 40%;
+}
+
+#cafemenu .text {
+  width: 60%;
+  padding: 20px 60px;
+  color: #a87d70;
+}
+
+#cafemenu h3 {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 1.8em;
+  padding-bottom: 30px;
+}
+
+#cafemenu img {
+  width: 340px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+}
+
+#cafemenu .explanatory {
+  padding-bottom: 30px;
+  line-height: 1.4;
+}
+
+.menuList {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.menuList table {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menuList th,
+.menuList td {
+  line-height: 1.8;
+  border-bottom: 2px dotted #a87d70;
+}
+
+/* staff */
+#staff {
+  background-color: #fff;
+  margin-top: 80px;
+}
+
+.cat {
+  text-align: center;
+}
+
+.cat img {
+  width: 280px;
+  border-radius: 50%;
+  border-right: 4px solid #a87d70;
+  border-bottom: 2px solid #a87d70;
+}
+
+.cat p {
+  padding-top: 8px;
+  color: #a87d70;
+}
+
+/* foster */
+#foster h2,
+#foster p {
+  color: #fff;
+}
+
+#foster .contentsWrap {
+  background: url(images/touch.jpg) no-repeat center center / cover;
+  padding-top: 25%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#foster .contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#foster .text {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  width: 480px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* shopInfo */
+#shopInfo h2 {
+  margin: 0;
+}
+
+#shopInfo h3 {
+  margin: 0 auto;
+}
+
+#shopInfo img {
+  margin: 30px auto;
+}
+
+#shopInfo .contents {
+  width: 90%;
+  padding: 0;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+#shopInfo .infoWrap {
+  width: 50%;
+}
+
+#shopInfo .text p {
+  font-size: 1.4em;
+}
+
+.infoTop,
+.mail {
+  padding-bottom: 30px;
+}
+
+/* google map */
+#shopInfo .map {
+  width: 50%;
+  height: 400px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  filter: sepia(50%);
+}
+
+/* 電話番号とメールアドレス */
+.favicon h3,
+.favicon p {
+  display: inline-block;
+}
+
+/* 動物取扱業標識 */
+.sign table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sign td,
+.sign th {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.sign h3 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.sign td {
+  padding-left: 10px;
+}
+
+/* thとtdの区切り線 */
+.sign th:after {
+  content: "…";
+  padding-left: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #a87d70;
+}
+
+.footerWrap {
+  position: relative;
+}
+
+.footerWrap .contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footerWrap ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerWrap li {
+  width: 25%;
+  padding: 10px;
+}
+
+.footerWrap a {
+  display: inline-block;
+}
+
+.footerWrap a:hover {
+  color: #7dbcc9;
+}
+
+.footerWrap img {
+  width: 65px;
+}
+
+.copyRight {
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff8dc;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 559px) {
+  body {
+    font-size: 4vw;
+    margin: auto;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 6vw;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .contentsWrap {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .contents {
+    display: block;
+    width: 100%;
+  }
+
+  .drawer-hamburger,
+  .drawer-nav {
+    display: block;
+  }
+
+  /* header */
+  header {
+    position: fixed;
+    width: auto;
+    height: 60px;
+    z-index: 888;
+    background-color: rgba(125, 188, 201, 0.9);
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  .headerWrap {
+    height: 100%;
+  }
+
+  .logoArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+  }
+
+  .logoArea h1 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .logo {
+    width: 80%;
+    padding: 2px 0 0 15px;
+  }
+
+  .globalNav,
+  .headerTel {
+    display: none;
+  }
+
+  #pageTop {
+    position: fixed;
+    bottom: 0;
+    right: -10px;
+    z-index: 999;
+  }
+
+  #pageTop img {
+    width: 21vw;
+    max-width: 80%;
+  }
+
+  /* mainVisual */
+  .swiper-slide {
+    padding-top: 65%;
+  }
+
+  .onSwiper {
+    height: 100%;
+  }
+
+  .catch p {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    right: 0;
+    font-size: 5vw;
+    color: #fff;
+    text-shadow: 3px 3px 8px #b04f31;
+  }
+
+  /* nyan-cafeとは */
+  #about {
+    margin-top: 6vh;
+  }
+
+  #about .contentsWrap {
+    padding: 0;
+  }
+
+  #about .contents {
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  #about .text {
+    width: 80%;
+    margin: 3vw auto;
+    padding: 0;
+    text-align: left;
+    background-image: url(images/contents_leaf_2.png);
+    background-position: right 0 top 0;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+  }
+
+  #about .pad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #about .pad img {
+    width: 33vw;
+    margin: auto;
+    padding: 0;
+  }
+
+  #about .text p {
+    padding-bottom: 2.8vw;
+  }
+
+  #about .padTop {
+    margin-left: 0;
+  }
+
+  #about .padBottom {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+  }
+
+  .more {
+    text-align: center;
+    padding: 0;
+  }
+
+  .more a {
+    width: 33vw;
+    line-height: 2;
+    border-radius: 30px;
+  }
+
+  /* 料金表 */
+  #price {
+    padding-top: 10vh;
+    margin-bottom: 0;
+  }
+
+  #price .contents {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  #price .priceHead h2 {
+    font-size: 6vw;
+    margin: 0 auto;
+    padding: 1.8vw 0;
+  }
+
+  #price .price {
+    width: 85%;
+  }
+
+  #price .priceList {
+    width: 90%;
+    margin: auto;
+  }
+
+  #price th,
+  #price td {
+    padding: 1.8vw 0;
+  }
+
+  /* メニュー表 */
+  #cafemenu {
+    padding-top: 10vh;
+    background: none;
+  }
+
+  #cafemenu .contentsWrap {
+    margin: 0 auto;
+    background: #fff8dc;
+  }
+
+  #cafemenu .contents {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  #cafemenu .contentsWrap {
+    padding: 0;
+  }
+
+  #cafemenu .foodImages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+  }
+
+  #cafemenu .foodImages img {
+    width: 49%;
+    max-height: 200px;
+  }
+
+  #cafemenu .text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 1vh 0 10vh 0;
+  }
+
+  #cafemenu h2 {
+    margin: 5vh 0 4vh 0;
+    border: none;
+  }
+
+  #cafemenu h3 {
+    display: inline-block;
+    margin: auto;
+    border-bottom: 2px solid #a87d70;
+    padding-bottom: 10px;
+    margin: 0 0 5vh 0;
+  }
+
+  #cafemenu .explanatory {
+    padding-bottom: 3vh;
+    text-align: left;
+  }
+
+  .menuList {
+    width: 100%;
+    font-size: 1.3em;
+  }
+
+  .menuList table {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #drink {
+    background-image: url(images/contents_leaf.png);
+    background-position: right 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+  }
+
+  #cake {
+    background-image: url(images/contents_leaf_2.png);
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+  }
+
+  /* 猫スタッフ */
+  #staff {
+    background-color: #fff;
+    margin: 6vh auto 10vh auto;
+  }
+
+  .cat {
+    text-align: center;
+  }
+
+  .cat img {
+    width: 80vw;
+
+  }
+
+  .cat p {
+    padding: 2.8vh 0;
+  }
+
+  /* 里親になる */
+  #foster .contentsWrap {
+    background: url(images/foster_sp.jpg) no-repeat center center / cover;
+    padding-top: 160%;
+    position: relative;
+    width: 100%;
+  }
+
+  #foster .contents {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  #foster h2 {
+    margin: 5vh auto 4vh auto;
+  }
+
+  #foster .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  #foster .explanatory {
+    margin: 1vh auto 4vh auto;
+    padding: 0;
+    width: 80%;
+    text-align: left;
+  }
+
+  /* shopInfo */
+  #shopInfo .contentsWrap {
+    padding: 0;
+  }
+
+  #shopInfo .contents {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  /* ロゴ */
+  #shopInfo img {
+    margin: 3vw auto;
+  }
+
+  #shopInfo .logo {
+    width: 70%;
+    padding: 0;
+  }
+
+  /* 各項目のサイズ */
+  #shopInfo .infoWrap {
+    width: 100%;
+    padding-top: 4vh;
+  }
+
+  #shopInfo .text {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4vh;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  /* 動物取扱業標識 */
+  .sign h3,
+  .sign th,
+  .sign td {
+    font-size: .9em;
+    color: #a87d70
+  }
+
+  .sign h3 {
+    padding: 0 0 5px 0;
+  }
+
+  /* マップ */
+  #shopInfo .map {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .map h3 {
+    display: none;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    filter: sepia(50%);
+  }
+
+  /* footer */
+  .footerWrap .contents {
+    padding: 0;
+  }
+
+  .footerWrap ul {
+    display: none;
+  }
+
+  .copyRight {
+    width: 100%;
+    margin: auto;
+    padding: 2vh 0;
+  }
+
+  .copyRight small {
+    font-size: 1em;
+  }
+}
