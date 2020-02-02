@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="nyan-cafe。本格的なコーヒーと手作りケーキが楽しめる、保護猫カフェ。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>nyan-cafeのホームページ</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/drawer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+  <script type="text/javascript" src="js/iscroll.js"></script>
+  <script type="text/javascript" src="js/drawer.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body id="top" class="drawer drawer--right">
+  <header>
+    <div class="headerWrap">
+      <div class="logoArea contents">
+        <h1><a href="#"><img class="logo" src="images/logo.png" alt="nyan-cafeのロゴマークです"></a></h1>
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <p class="headerTel figure"><i class="fas fa-phone"></i> 06-0000-0000</p>
+        <p id="pageTop"><a href="#"><img src="images/top.png" alt="ページトップボタン"></a></p>
+      </div>
+      <nav>
+        <ul class="contents globalNav">
+          <li class="accordion"><a href="about/index.html">nyan-cafeとは</a>
+            <ul class="accordionMenu">
+              <li><a href="about/index.html#service">はじめて</a></li>
+              <li><a href="about/index.html#please">おねがい</a></li>
+            </ul>
+          </li>
+          <li class="accordion"><a href="#service">サービス</a>
+            <ul class="accordionMenu">
+              <li><a href="#price">料金表</a></li>
+              <li><a href="#cafemenu">カフェメニュー</a></li>
+            </ul>
+          </li>
+          <li><a href="staff/index.html">猫スタッフ</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="foster/index.html">里親になる</a></li>
+          <li><a href="contact/index.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ドロワーメニューの中身 -->
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-menu-item" href="index.html"><img src="images/icon.png" alt=""></a></li>
+        <li><a class="drawer-menu-item" href="about/index.html">nyan-cafeとは</a></li>
+        <li><a class="drawer-menu-item" href="about/index.html#first">はじめて</a></li>
+        <li><a class="drawer-menu-item" href="about/index.html#please">おねがい</a></li>
+        <li><a class="drawer-menu-item" href="index.html#price">料金</a></li>
+        <li><a class="drawer-menu-item" href="index.html#cafemenu">カフェメニュー</a></li>
+        <li><a class="drawer-menu-item" href="staff/index.html">猫スタッフ</a></li>
+        <li><a class="drawer-menu-item" href="foster/index.html">里親になる</a></li>
+        <li><a class="drawer-menu-item" href="contact/index.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main role="main">
+    <!-- メインビジュアル -->
+    <div id="mainVisual">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(images/slider1.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/slider2.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/slider3.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/slider4.jpg)"></div>
+        </div>
+      </div>
+      <div class="onSwiper">
+        <img class="leaf" src="images/leaf.png" alt="コーヒーとリーフの画像です">
+        <div class="catch">
+          <p>ねこちゃんと<br><br>&nbsp;&nbsp;ほっとひといき</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- nyan-cafeとは -->
+    <section id="about">
+      <div class="contentsWrap">
+        <h2><span class="shopName">nyan-cafe</span><span class="asTo">とは</span></h2>
+        <div class="contents">
+          <div class="text">
+            <p>nyan-cafeは、本格的なコーヒーと手作りケーキが楽しめる保護猫カフェです。<br>
+              「ふらっと立ち寄ったカフェには、猫がいた。」<br>
+              それがお店のコンセプトです。<br><br>
+              当店は、カフェスペースと触れ合いスペースを透明の仕切りで区切っております。<br>
+              カフェスペースでじっくりとコーヒーやケーキを楽しむのも、<br>
+              触れ合いスペースで猫とゆっくりと過ごすのも自由な居場所です。<br>
+              ご入店の際に、どちらのスペースをご利用になるかお申し出ください。</p>
+          </div>
+          <div class="pad">
+            <a href="about/index.html#first"><img class="padTop" src="images/first.png" alt="はじめてご来店の方へのページの案内アイコンです"></a>
+            <a href="about/index.html#please"><img class="padBottom" src="images/please.png" alt="ご来店の方へのお願いページへの案内アイコンです"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- サービス -->
+    <section id="service">
+      <!-- 料金表 -->
+      <section id="price">
+        <div class="contentsWrap">
+          <div class="contents">
+            <div class="priceWrap">
+              <table class="price">
+                <tr class="first">
+                  <th class="priceHead" colspan="2">
+                    <h2>料金表&nbsp;(税込)</h2>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="minute minute1"><span class="figure">60</span>分</th>
+                  <td><span class="figure">1200</span>円</td>
+                </tr>
+                <tr>
+                  <th class="minute"><span class="figure">90</span>分</th>
+                  <td><span class="figure">1700</span>円</td>
+                </tr>
+                <tr class="last">
+                  <th class="minute"><span class="figure">120</span>分</th>
+                  <td><span class="figure">2100</span>円</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- カフェメニュー -->
+      <section id="cafemenu">
+        <div class="contentsWrap">
+          <h2>カフェメニュー</h2>
+          <div id="drink">
+            <div class="contents">
+              <div class="foodImages">
+                <img src="images/drink1.jpg" alt="ドリンクメニューのブレンドコーヒーの画像です">
+                <img src="images/drink2.jpg" alt="ドリンクメニューのチャイの画像です">
+              </div>
+              <div class="text">
+                <h3>Drink</h3>
+                <p class="explanatory">
+                  自家焙煎の香ばしいブレンドコーヒーや、口当たりがまろやかなカプチーノなど、こだわりのドリンクメニューです。<br>
+                  気分にあった一杯をどうぞ。</p>
+                <div class="menuList">
+                  <table>
+                    <tr>
+                      <th>ブレンドコーヒー</th>
+                      <td><span class="figure">&yen;550</span></td>
+                    </tr>
+                    <tr>
+                      <th>エスプレッソ</th>
+                      <td><span class="figure">&yen;600</span></td>
+                    </tr>
+                    <tr>
+                      <th>カプチーノ</th>
+                      <td><span class="figure">&yen;600</span></td>
+                    </tr>
+                    <tr>
+                      <th>カフェラテ</th>
+                      <td><span class="figure">&yen;550</span></td>
+                    </tr>
+                    <tr>
+                      <th>カフェモカ</th>
+                      <td><span class="figure">&yen;650</span></td>
+                    </tr>
+                    <tr>
+                      <th>チャイ</th>
+                      <td><span class="figure">&yen;600</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cake">
+            <div class="contents">
+              <div class="foodImages">
+                <img src="images/cake1.jpg" alt="ケーキメニューのパンケーキの画像です">
+                <img src="images/cake2.jpg" alt="ケーキメニューのシフォンケーキの画像です">
+              </div>
+              <div class="text">
+                <h3>Cake</h3>
+                <p class="explanatory">シンプルな見た目ではありますがふわふわを追求したパンケーキ、なめらかさがクセになるチーズケーキ。<br>
+                  どのケーキも甘すぎず、優しいお味になっております。<br>
+                  季節のタルトの詳細につきましては、店員にお尋ねください。
+                </p>
+                <div class="menuList">
+                  <table>
+                    <tr>
+                      <th>パンケーキ</th>
+                      <td><span class="figure">&yen;950</span></td>
+                    </tr>
+                    <tr>
+                      <th>シフォンケーキ</th>
+                      <td><span class="figure">&yen;700</span></td>
+                    </tr>
+                    <tr>
+                      <th>チーズケーキ</th>
+                      <td><span class="figure">&yen;650</span></td>
+                    </tr>
+                    <tr>
+                      <th>ガトーショコラ</th>
+                      <td><span class="figure">&yen;800</span></td>
+                    </tr>
+                    <tr>
+                      <th>プリン</th>
+                      <td><span class="figure">&yen;600</span></td>
+                    </tr>
+                    <tr>
+                      <th>季節のタルト</th>
+                      <td><span class="figure">&yen;750</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 猫スタッフ -->
+    <section id="staff">
+      <div class="contentsWrap">
+        <h2>猫スタッフ</h2>
+        <div class="contents  scroll-fade-row">
+          <div class="cat">
+            <img src="images/cat1.jpg" alt="猫スタッフ「小太郎」の写真です">
+            <p>ひゅーが(６)</p>
+          </div>
+          <div class="cat">
+            <img src="images/cat2.jpg" alt="猫スタッフ「りょうくん」の写真です">
+            <p>シンジ(２)</p>
+          </div>
+          <div class="cat">
+            <img src="images/cat3.jpg" alt="猫スタッフ「メイ」の写真です">
+            <p>十四郎(３)</p>
+          </div>
+        </div>
+        <div class="more">
+          <span><a href="staff/index.html">read more</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 里親になる -->
+    <section id="foster">
+      <div class="contentsWrap">
+        <div class="contents">
+          <div class="text">
+            <h2>里親になる</h2>
+            <p class="explanatory">nyan-cafeの猫さんたちは、恵まれない環境で生まれ育ったり、
+              やむを得ない事情によって、保護された猫さんです。<br><br>
+              「あっ、この子と家族になりたい」と思って下さる方を、
+              これから先の時間を共に過ごす家族を、愛情を一心に注いでくれる家族を求めています。</p>
+            <div class="more">
+              <span><a href="foster/index.html">read more</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- shopInfo -->
+    <section id="shopInfo">
+      <div class="contentsWrap">
+        <h2><img class="logo" src="images/logo.png" alt="nyan-cafeのロゴマークです"></h2>
+        <div class="contents">
+          <div class="infoWrap">
+            <div class="address text infoTop">
+              <h3>住所</h3>
+              <p>&#12306;<span class="figure">500-0000</span><br>
+                大阪府大阪市○○○○○○○○</p>
+            </div>
+            <div class="working text infoTop">
+              <h3>営業時間</h3>
+              <p class="figure">10:00～19:00</p>
+              <p>※定休日：火曜日・木曜日</p>
+            </div>
+            <div class="tel text favicon">
+              <h3><i class="fas fa-phone"></i></h3>
+              <p class="figure">06-0000-0000</p>
+            </div>
+            <div class="mail text favicon">
+              <h3><i class="fas fa-envelope"></i></h3>
+              <p>info@○○○○○○○○.com</p>
+            </div>
+            <div class="sign text">
+              <h3>動物取扱業標識</h3>
+              <table>
+                <tr>
+                  <th>登録番号</th>
+                  <td>登録第○○○○○○号</td>
+                </tr>
+                <tr>
+                  <th>登録の年月日</th>
+                  <td>平成○年○月○日</td>
+                </tr>
+                <tr>
+                  <th>有効期限の末日</th>
+                  <td>平成○年○月○日</td>
+                </tr>
+                <tr>
+                  <th>事業所の名称</th>
+                  <td>nyan-cafe</td>
+                </tr>
+                <tr>
+                  <th>登録に係る動物取扱業の種別</th>
+                  <td>展示・保管</td>
+                </tr>
+                <tr>
+                  <th>動物取扱責任者の氏名</th>
+                  <td>○○○○</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="map">
+            <h3>アクセス</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.292527048767!2d135.51168031471613!3d34.64731459358428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddf0fdd44579%3A0x90b6c0d913ac9a7e!2z5aSp546L5a-66aeF!5e0!3m2!1sja!2sjp!4v1579062925557!5m2!1sja!2sjp"
+              frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerWrap">
+      <div class="contents">
+        <ul>
+          <li><a href="#about">nyan-cafeとは</a></li>
+          <li><a href="about/index.html#first">はじめての方へ</a></li>
+          <li><a href="about/index.html#please">おねがい</a></li>
+          <li><a href="#touch">カフェメニュー</a></li>
+          <li><a href="staff/index.html">猫スタッフ</a></li>
+          <li><a href="foster/index.html">里親になる</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="contact/index.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="copyRight">
+        <small>&copy;&nbsp;<span class="figure">2020<span>&nbsp;nyan-cafe</small>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
